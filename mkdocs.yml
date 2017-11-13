@@ -1,0 +1,44 @@
+site_name: Stevia Docs
+copyright: 'Copyright &copy; 2017 freshOS'
+
+pages:
+- Overview: index.md
+- Installation: installation.md
+- View Hierarchy: ViewHierarchy.md
+- Layout:
+  - Sizing: 'Layout/sizing.md'
+  - Centering: 'Layout/centering.md'
+  - Filling: 'Layout/filling.md'
+  - Aligning: 'Layout/aligning.md'
+  - 'Following another View': 'Layout/following.md'
+  - Horizontal: 'Layout/horizontal.md'
+  - Vertical: 'Layout/vertical.md'
+  - Flexible: 'Layout/flexibleMargins.md'
+  - Percentage: 'Layout/percentage.md'
+  - Equations: 'Layout/equations.md'
+  - Priorities: 'Layout/priorities.md'
+- Styling: styling.md
+- 'Changing Constraints': 'changingConstraints.md'
+- 'TableView Cells & CollectionView Cells': 'cells.md'
+- 'Getting views from the controller' : 'viewFromController.md'
+- 'Complex nested layout' : 'nested.md'
+- 'Known Issues' : 'knownIssues.md'
+- 'Live Reload' : liveReload.md
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'green'
+    accent: 'yellow'
+    # text: 'Ubuntu Mono'
+    # code: 'Ubuntu Mono'
+
+extra:
+    logo: 'images/droplet-white.svg'
+    social:
+        - type: 'twitter'
+          link: 'https://twitter.com/@sachadso'
+        - type: 'github'
+          link: 'https://github.com/freshOS/Stevia'
+        - type: 'webstite'
+          link: 'https://opencollective.com/freshos'
