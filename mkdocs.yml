@@ -4,7 +4,7 @@ copyright: 'Copyright &copy; 2017 freshOS'
 pages:
 - Overview: index.md
 - Installation: installation.md
-- View Hierarchy: ViewHierarchy.md
+- View Hierarchy: viewHierarchy.md
 - Layout:
   - Sizing: 'Layout/sizing.md'
   - Centering: 'Layout/centering.md'
@@ -29,9 +29,7 @@ theme:
   name: 'material'
   palette:
     primary: 'green'
-    accent: 'indigo'
-    # text: 'Ubuntu Mono'
-    # code: 'Ubuntu Mono'
+    accent: 'green'
 
 extra:
     logo: 'images/droplet-white.svg'
@@ -40,5 +38,11 @@ extra:
           link: 'https://twitter.com/@sachadso'
         - type: 'github'
           link: 'https://github.com/freshOS/Stevia'
-        - type: 'webstite'
+        - type: 'link'
           link: 'https://opencollective.com/freshos'
+
+repo_url: https://github.com/freshos/SteviaDocs
+
+markdown_extensions:
+    - codehilite:
+        guess_lang: false
