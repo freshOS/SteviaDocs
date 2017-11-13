@@ -58,12 +58,14 @@
     
     
     
-      <body data-md-color-primary="green" data-md-color-accent="indigo">
+      <body data-md-color-primary="green" data-md-color-accent="green">
     
   
     <svg class="md-svg">
       <defs>
         
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -127,6 +129,30 @@
         
       </div>
       
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/freshos/SteviaDocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
     </div>
   </nav>
 </header>
@@ -149,6 +175,28 @@
     </span>
     Stevia Docs
   </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/freshos/SteviaDocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -182,7 +230,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../ViewHierarchy/" title="View Hierarchy" class="md-nav__link">
+    <a href="../../viewHierarchy/" title="View Hierarchy" class="md-nav__link">
       View Hierarchy
     </a>
   </li>
@@ -501,45 +549,52 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/freshos/SteviaDocs/edit/master/docs/Layout/vertical.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                   <h1>Vertical</h1>
                 
-                <pre><code class="swift">avatar.top(50)
-</code></pre>
+                <div class="codehilite"><pre><span></span><span class="n">avatar</span><span class="p">.</span><span class="n">top</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+
 
 <p>==</p>
-<pre><code class="swift">layout(
-    50,
-    avatar
-  )
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">layout</span><span class="p">(</span>
+    <span class="mi">50</span><span class="p">,</span>
+    <span class="n">avatar</span>
+  <span class="p">)</span>
+</pre></div>
+
 
 <p>While using <code>layout</code> for a single element might seem a bit overkill, it really <strong>shines</strong> when <strong>combined with horizontal layout.</strong>
 Then we have the full <strong>layout in one place</strong> (hence the name).</p>
-<pre><code class="swift">layout(
-    50,
-    |-15-avatar.size(60)
-  )
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">layout</span><span class="p">(</span>
+    <span class="mi">50</span><span class="p">,</span>
+    <span class="o">|-</span><span class="mi">15</span><span class="o">-</span><span class="n">avatar</span><span class="p">.</span><span class="n">size</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+  <span class="p">)</span>
+</pre></div>
+
 
 <p><em>The avatar is 50px from the top with a left margin of 15px and a size of 60px</em></p>
 <p>Another great example is the login view, representable in <strong>one</strong> single statement !</p>
-<pre><code class="swift">layout(
-    100,
-    |-email-| ~ 80,
-    8,
-    |-password-| ~ 80,
-    &quot;&quot;,
-    |login| ~ 80,
-    0
-)
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">layout</span><span class="p">(</span>
+    <span class="mi">100</span><span class="p">,</span>
+    <span class="o">|-</span><span class="n">email</span><span class="o">-|</span> <span class="o">~</span> <span class="mi">80</span><span class="p">,</span>
+    <span class="mi">8</span><span class="p">,</span>
+    <span class="o">|-</span><span class="n">password</span><span class="o">-|</span> <span class="o">~</span> <span class="mi">80</span><span class="p">,</span>
+    <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="o">|</span><span class="n">login</span><span class="o">|</span> <span class="o">~</span> <span class="mi">80</span><span class="p">,</span>
+    <span class="mi">0</span>
+<span class="p">)</span>
+</pre></div>
+
 
 <p>In case you wonder <code>~</code> operator == <code>.height(x)</code>, it's just more readable in a layout statement that way.</p>
 <h5 id="chainable-api">Chainable Api</h5>
 <p>The avatar example above could've been written that way using the chainable api :</p>
-<pre><code class="swift">avatar.top(50).left(15).size(50)
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">avatar</span><span class="p">.</span><span class="n">top</span><span class="p">(</span><span class="mi">50</span><span class="p">).</span><span class="kr">left</span><span class="p">(</span><span class="mi">15</span><span class="p">).</span><span class="n">size</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+
 
 <p>Using <code>layout</code> is just clearer in most of the cases but it's yours to choose which way you prefer :)</p>
                 
@@ -616,7 +671,7 @@ Then we have the full <strong>layout in one place</strong> (hence the name).</p>
     
       <a href="https://github.com/freshOS/Stevia" class="md-footer-social__link fa fa-github"></a>
     
-      <a href="https://opencollective.com/freshos" class="md-footer-social__link fa fa-webstite"></a>
+      <a href="https://opencollective.com/freshos" class="md-footer-social__link fa fa-link"></a>
     
   </div>
 
