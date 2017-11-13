@@ -29,7 +29,7 @@ theme:
   name: 'material'
   palette:
     primary: 'green'
-    accent: 'green'
+    accent: 'indigo'
     # text: 'Ubuntu Mono'
     # code: 'Ubuntu Mono'
 
