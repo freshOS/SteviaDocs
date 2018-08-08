@@ -25,8 +25,18 @@ layout(
     |-password-|,
 )
 
-// Flush all view constraints
-removeConstraints(constraints)
+// Creating an extension for getting user added constraints
+extension UIView {
+    var userAddedConstraints: [NSLayoutConstraint] {
+        return constraints.filter { c in
+            guard let cId = c.identifier else { return true }
+            return !cId.contains("UIView-Encapsulated-Layout")
+        }
+    }
+}
+
+// remove userAddedConstraints
+removeConstraints(userAddedConstraints)
 
 // Re-apply different layout
 layout(

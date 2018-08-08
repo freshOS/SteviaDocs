@@ -7,6 +7,9 @@ Height
 ```swift
 view.height(100)
 ```
+`view ~ (100)` is same with `view.height(100)`
+
+You can use `~` operator for `.height(x)`. It's just more readable in a layout statement that way.
 
 Size
 ```swift
