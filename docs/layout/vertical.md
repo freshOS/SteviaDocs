@@ -34,8 +34,6 @@ layout(
 )
 ```
 
-In case you wonder `~` operator == `.height(x)`, it's just more readable in a layout statement that way.
-
 ##### Chainable Api
 
 The avatar example above could've been written that way using the chainable api :
