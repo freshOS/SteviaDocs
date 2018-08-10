@@ -598,8 +598,18 @@ flush &amp; relayout.</p>
     <span class="o">|-</span><span class="n">password</span><span class="o">-|</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="c1">// Flush all view constraints</span>
-<span class="n">removeConstraints</span><span class="p">(</span><span class="n">constraints</span><span class="p">)</span>
+<span class="c1">// Creating an extension for getting user added constraints</span>
+<span class="kd">extension</span> <span class="bp">UIView</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nv">userAddedConstraints</span><span class="p">:</span> <span class="p">[</span><span class="bp">NSLayoutConstraint</span><span class="p">]</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">constraints</span><span class="p">.</span><span class="bp">filter</span> <span class="p">{</span> <span class="n">c</span> <span class="k">in</span>
+            <span class="k">guard</span> <span class="kd">let</span> <span class="nv">cId</span> <span class="p">=</span> <span class="n">c</span><span class="p">.</span><span class="n">identifier</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">true</span> <span class="p">}</span>
+            <span class="k">return</span> <span class="o">!</span><span class="n">cId</span><span class="p">.</span><span class="bp">contains</span><span class="p">(</span><span class="s">&quot;UIView-Encapsulated-Layout&quot;</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// remove userAddedConstraints</span>
+<span class="n">removeConstraints</span><span class="p">(</span><span class="n">userAddedConstraints</span><span class="p">)</span>
 
 <span class="c1">// Re-apply different layout</span>
 <span class="n">layout</span><span class="p">(</span>
