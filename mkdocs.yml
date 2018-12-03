@@ -1,22 +1,22 @@
 site_name: Stevia Docs
 copyright: 'Copyright &copy; 2017 freshOS'
 
-pages:
+nav:
 - Overview: index.md
 - Installation: installation.md
 - View Hierarchy: viewHierarchy.md
 - Layout:
-  - Sizing: 'Layout/sizing.md'
-  - Centering: 'Layout/centering.md'
-  - Filling: 'Layout/filling.md'
-  - Aligning: 'Layout/aligning.md'
-  - 'Following another View': 'Layout/following.md'
-  - Horizontal: 'Layout/horizontal.md'
-  - Vertical: 'Layout/vertical.md'
-  - Flexible: 'Layout/flexibleMargins.md'
-  - Percentage: 'Layout/percentage.md'
-  - Equations: 'Layout/equations.md'
-  - Priorities: 'Layout/priorities.md'
+  - Sizing: 'layout/sizing.md'
+  - Centering: 'layout/centering.md'
+  - Filling: 'layout/filling.md'
+  - Aligning: 'layout/aligning.md'
+  - 'Following another View': 'layout/following.md'
+  - Horizontal: 'layout/horizontal.md'
+  - Vertical: 'layout/vertical.md'
+  - Flexible: 'layout/flexibleMargins.md'
+  - Percentage: 'layout/percentage.md'
+  - Equations: 'layout/equations.md'
+  - Priorities: 'layout/priorities.md'
 - Styling: styling.md
 - 'Changing Constraints': 'changingConstraints.md'
 - 'TableView Cells & CollectionView Cells': 'cells.md'
